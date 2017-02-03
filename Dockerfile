@@ -1,7 +1,6 @@
-FROM python:2-slim
+FROM alpine
 
-RUN apt-get update \
-    && apt-get install -y rsync git-core \
+RUN apk add --no-cache rsync git python py-pip build-base python-dev libffi-dev openssl-dev \
     && pip install git+git://github.com/ansible/ansible.git@devel \
-    && rm -rf /tmp/pip* \
-    && rm -rf /var/lib/apt/lists/*
+    && apk del git py-pip build-base python-dev libffi-dev openssl-dev \
+    && rm -rf /tmp/*
