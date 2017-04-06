@@ -1,3 +1,3 @@
-## Ansible docker image for deploy
+## Ansible docker image
 
-2.3.0 version
+Alpine git@devel version
