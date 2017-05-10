@@ -1,3 +1,3 @@
 ## Ansible docker image
 
-Alpine git@devel version
+Alpine git@devel version.
