@@ -1,3 +1,9 @@
 ## Ansible docker image
 
-Alpine git@devel version.
+Based on alpine image.
+
+Installed packages:
+
+- bash
+- rsync
+- openssh client
